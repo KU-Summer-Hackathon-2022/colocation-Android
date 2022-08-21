@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="home"
+            type="org.aos.shareroof.list.Home" />
+
+    </data>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_home"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_home"
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:src="@color/purple_200"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:ellipsize="middle"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:text="@{home.address}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_home"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Asdfa" />
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{home.price+`원`}"
+                    android:layout_marginTop="12dp"
+                    tools:text="Asdfa"
+                    android:fontFamily="@font/roboto_bold"
+                    app:layout_constraintTop_toBottomOf="@id/tv_address"
+                    app:layout_constraintStart_toStartOf="@id/tv_address"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:paddingVertical="8dp"
+                    android:paddingHorizontal="12dp"
+                    android:text="@{home.category}"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_r20_main2"
+                    tools:text="Asdfa"
+                    app:layout_constraintTop_toBottomOf="@id/tv_price"
+                    app:layout_constraintStart_toStartOf="@id/tv_price"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_like"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:tag="unstar"
+                    android:src="@drawable/ic_un_star"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+</layout>

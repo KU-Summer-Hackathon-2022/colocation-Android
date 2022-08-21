@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "450251090458",
+    "project_id": "colocation-d7cee",
+    "storage_bucket": "colocation-d7cee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450251090458:android:f48c7b9baa56d0e1b77fa3",
+        "android_client_info": {
+          "package_name": "org.aos.shareroof"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450251090458-49b592dtrembdt89f37sk2l0fv4oumrl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5_Ykm5fAlm7BZBAQhTTuH1GME3v7A2_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450251090458-49b592dtrembdt89f37sk2l0fv4oumrl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "450251090458-k07jeghloqlpnlsdi3kk22platqo7vbc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ios.colocation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

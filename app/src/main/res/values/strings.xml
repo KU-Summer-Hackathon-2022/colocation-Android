@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShareRoof</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kakao_key">353a97b8c48377b658d9256ccbd6f9d7</string>
+    <string name="kakao_native">kakao353a97b8c48377b658d9256ccbd6f9d7</string>
+</resources>
